@@ -1,5 +1,7 @@
 package org.example.interview;
 
+import java.util.*;
+
 public class countWordsIteratively {
 
 
@@ -12,7 +14,13 @@ public class countWordsIteratively {
             " ché la dritta via era smarrita ";
 
     System.out.println("Found " + countWordsIteratively2(SENTENCE) + " words");
+    Map<String,Integer> ageOfFriends = new HashMap<>();
+    ageOfFriends.put("Raphael",30);
+    ageOfFriends.put("yaozeyu",18);
+    System.out.println(ageOfFriends);
+
   }
+
   public static int countWordsIteratively2(String s) {
     int count = 0;
     boolean lastSpace = true;
