@@ -16,4 +16,10 @@ public class GetPlanFactory {
     }
     return null;
   }
+
+  public <T> T genericMethod(Class<T> tClass) {
+    T instance = tClass.newInstance();
+    return instance;
+
+  }
 }
