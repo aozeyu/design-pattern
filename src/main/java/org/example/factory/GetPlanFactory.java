@@ -1,25 +1,25 @@
-package org.example.factory;
-
-public class GetPlanFactory {
-  public Plan getPlan(String planType) {
-    if (planType == null) {
-      return null;
-    }
-    if (planType.equalsIgnoreCase("DOMESTICPLAN")) {
-
-      return new DomesticPlan();
-    } else if (planType.equalsIgnoreCase("COMMERRCIAL")) {
-      return new CommercialPlan();
-    } else if (planType.equalsIgnoreCase("INSTITUTIONALPLAN")) {
-
-      return new InstitutionalPlan();
-    }
-    return null;
-  }
-
-  public <T> T genericMethod(Class<T> tClass) {
-    T instance = tClass.newInstance();
-    return instance;
-
-  }
-}
+//package org.example.factory;
+//
+//public class GetPlanFactory {
+//  public Plan getPlan(String planType) {
+//    if (planType == null) {
+//      return null;
+//    }
+//    if (planType.equalsIgnoreCase("DOMESTICPLAN")) {
+//
+//      return new DomesticPlan();
+//    } else if (planType.equalsIgnoreCase("COMMERRCIAL")) {
+//      return new CommercialPlan();
+//    } else if (planType.equalsIgnoreCase("INSTITUTIONALPLAN")) {
+//
+//      return new InstitutionalPlan();
+//    }
+//    return null;
+//  }
+//
+//  public <T> T genericMethod(Class<T> tClass) {
+//    T instance = tClass.newInstance();
+//    return instance;
+//
+//  }
+//}
