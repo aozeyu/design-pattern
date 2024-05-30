@@ -25,7 +25,7 @@ public class GuiguMybatis {
     user.setUsername(username);
     user.setAge(18);
     //放入缓存
-    userCache.put(username,user);
+    userCache.put(username,(User) user.clone());
     return user;
   }
 
